@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Responsive Navbar</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <nav class="navbar">
+    <span class="open-slide">
+      <a href="#" onclick="openSlideMenu()">
+        <svg width="30" height="30">
+          <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+          <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+          <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+        </svg>
+      </a>
+    </span>
+    <h1><span>YOUTH</span><span>MOBILE</span>    <span>PREP</span></h1>
+  </nav>
+  <!-- side-nav -->
+  <div id="side-menu" class="side-nav">
+    <!-- <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a> -->
+    <a href="index.html"><img src="images/home-menu.png"> <span>Home</span></a>
+    <hr>
+    <a href="pages/about.html"><img src="images/about-menu.png"> <span>About</span></a>
+    <hr>
+    <a href="pages/html-lesson.html"><img src="images/html-menu.png"> <span>Learn HTML</span></a>
+    <hr>
+    <a href="pages/css-lesson.html"><img src="images/css3-menu.png"> <span>Learn CSS</span></a>
+    <hr>
+    <a href="pages/javascript-lesson.html"><img src="images/javascript-menu.png"> <span>Learn JavaScript</span></a>
+    <hr>
+    <a href="pages/quiz-app.html"><img src="images/test-menu.png"> <span>Take Test</span></a>
+    <hr>
+    <a href="pages/faqs.html"><img src="images/faqs-menu.png"> <span>FAQs</span></a>
+    <hr>
+  </div>
+
+  <div id="main" class="btn-close" onclick="closeSlideMenu()">
+    <h4>LEARN THE BASICS OF HTML, CSS AND JAVASCRIPT</h4>
+    <p>You also have the opportunity to test your knowledge after learning.</p>
+    <div class="html-tut">
+      <h5>LEARN HTML</h5>
+      <div style="text-align: center;"><img src="images/html.png" alt=""></div>
+      <p>HTML is an acronym for Hypertext Markup Language. It is used to markup web pages. It is also called a markup language. HTML is used to build the structure of web pages. It is like the skeletal of web pages with only bones and no flesh. Think of it as the bricklayer who erects the structure of a building using blocks, cement, mortar etc. The structure ususally looks unappealing to the eye because it lacks presentation(beauty) and interactivity provided by CSS and Javascript respectively.</p>
+      <a href="pages/html-lesson.html">Read More</a>
+    </div>
+    <div class="css-tut">
+      <h5>LEARN CSS3</h5>
+      <div style="text-align: center;"><img src="images/css3.png"></div>
+      <p>CSS stands for Cascading Style Sheet which adds presentation to web pages; hence, CSS is a styling language. CSS can best be compared to the mason who plasters the walls of a building, the painter who uses different color combinations to paint the walls of a building, the carpenter who adds ceiling to a building. In short, CSS can be related to all the beautiul things added to a building. In this case, it means CSS adds beauty to the structure (HTML) of web pages.</p>
+      <a href="pages/css-lesson.html">Read More</a>
+    </div>
+    <div class="javascript-tut">
+      <h5>LEARN JAVASCRIPT</h5>
+      <div style="text-align: center;"><img src="images/javascript.png"></div>
+      <p>Javascript is a programming language that adds interactivity to web pages. It is the only programming language that is used on the client side (i.e to interact with the browser). Since HTML, and CSS are the bricklayer and artist respectively, JavaScript is the Wizard who adds interactivity to a completed building. The remote control of all the electronic devices in a building can said to be the JavaScript because with it, the occupant could turn on/off a TV set, regulate the temperature of the air condition in a room. Also, the power switch of fans and light bulbs could also be compared to Javascript. In real sense, the test section of this application is a typical example of the application of JavaScript in mobile/web development, because a user is able to take a test and get the test result on the fly.</p>
+      <a href="pages/javascript-lesson.html">Read More</a>
+    </div>
+    <div class="javascript-tut">
+      <h5>KNOWLEDGE CHECK</h5>
+      <div style="text-align: center;"><img src="images/javascript.png"></div>
+      <p>Once you are done with all the lessons above, you can proceed to this section to test your knowledge of CSS, HTML and Javascript. The test is designed to help you find out your theoretical knowledge of the three languages of the web mentioned above.</p>
+      <a href="pages/quiz-app.html">Take Test</a>
+    </div>
+  </div>
+  <footer></footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Responsive Navbar</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/collapsible.css">
+  <link rel="stylesheet" href="../css/javascript-lesson.css">
+</head>
+<body>
+  <nav class="navbar">
+    <span class="open-slide">
+      <a href="#" onclick="openSlideMenu()">
+        <svg width="30" height="30">
+          <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+          <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+          <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+        </svg>
+      </a>
+    </span>
+    <h1><span>YOUTH</span><span>MOBILE</span>    <span>PREP</span></h1>
+  </nav>
+  <!-- side-nav -->
+  <div id="side-menu" class="side-nav">
+    <a href="../index.html"><img src="../images/home-menu.png"> <span>Home</span></a>
+    <hr>
+    <a href="about.html"><img src="../images/about-menu.png"> <span>About</span></a>
+    <hr>
+    <a href="html-lesson.html"><img src="../images/html-menu.png"> <span>Learn HTML</span></a>
+    <hr>
+    <a href="css-lesson.html"><img src="../images/css3-menu.png"> <span>Learn CSS</span></a>
+    <hr>
+    <a href="javascript-lesson.html"><img src="../images/javascript-menu.png"> <span>Learn JavaScript</span></a>
+    <hr>
+    <a href="quiz-app.html"><img src="../images/test-menu.png"> <span>Take Test</span></a>
+    <hr>
+    <a href="faqs.html"><img src="../images/faqs-menu.png"> <span>FAQs</span></a>
+    <hr>
+  </div>
+
+  <div id="main" class="btn-close" onclick="closeSlideMenu()">
+    <h2>JAVASCRIPT LESSON</h2>
+    <button class="collapsible">What is JavaScript?</button>
+    <div class="content">
+      <p>JavaScript is a programming language which adds interactivity to web pages. Applications built with only HTML CSS are usually static meaning that a user is unable to interact with such applications. For instance, the menu that opens/closes when you touch the hamburger icons is a function of JavaScript. Also, when you take the test in this application, you will get a result instantly all thanks to JavaScript  or what I love to call <em>The Wizard.</em>. It is important to note that JavaScript is not the same as same Java. They are entirely diffrently programming languages. The official name for JavaScript is EcmaScript.</p>
+    </div>
+    <button class="collapsible">Writing JavaScript</button>
+    <div class="content">
+      <p>JavaScript can be written in on of the following two ways;</p>
+      <ol>
+        <li>Embedded script within the HTML head or body tags</li>
+        <li>External script in an external script file</li>
+      </ol>
+    </div>
+    <button class="collapsible">Embedded JavaScript</button>
+    <div class="content">
+      <p>To write JavaScript in the HTML document is called Embedded JavaScript. This can be done by creating the script tag either within the head or the body tags. As you get advance in learning JavaScript, you will learn why it is so.</p>
+      <!-- Image Code snippet of embeddd javascript  -->
+      <img src="">
+    </div>
+    <button class="collapsible">External JavaScript</button>
+    <div class="content">
+      <p>Again, for seperation of concern, it is recommeded to write JavaScript in an external script file. You do this by creating a file with the .js name extension and then linking it to HTML document(s). To define the path to the script file, you will do as seen in the figure below</p>
+      <!-- Image Code snippet of external Javascript  -->
+      <img src="">
+    </div>
+    <button class="collapsible">JavaScript Data Types</button>
+    <div class="content">
+      <p>In JavaScript and all other programming languages, programs are written using data. And these data are stored containers called varaibles. These data include;</p>
+      <ul>
+        <li>number as in 1, 2.6, 3, 4....</li>
+        <li>string as in "Hello"/'Hello'. Strings are wrapped in either double/single quotes.</li>
+        <li>bolean as in true of false</li>
+        <li>null</li>
+        <li>undefined</li>
+        <li>primitives that is objects and arrays.</li>
+      </ul>
+    </div>
+    <button class="collapsible">JavaScript Varaibles</button>
+    <div class="content">
+      <p>As mentioned in the previous lesson, variables are containers for storing data. For instance basic arithmetic we could have x = 2. This means that x is the conatainer/variable while 2 is the data. It is similar to JavaScript; the only difference is the var keyword used before the variable name in JavaScript. The variable can hold any data type.</p>
+      <!-- image code snippet of varibles with nums, strings, boolean; -->
+      <img src="">
+    </div>
+    <button class="collapsible">JavaScript Comment</button>
+    <div class="content">
+      <p>As you have learned in HTML and CSS lessons, comments are used by developers do know what is written where and sometimes why it is written. In javascript, we write comment as seen in the figure below.</p>
+      <!-- image code snippet javascript comment -->
+      <img src="">
+    </div>
+    <button class="collapsible">JavaScript Operators</button>
+    <div class="content">
+      <p>See the figure below for the various javascript operators</p>
+      <!-- image code snippet of javascript operators -->
+      <img src="">
+    </div>
+    <button class="collapsible">JavaScript Arithmetic</button>
+    <div class="content">
+      <p>We can perform arithmetic in Javascript using the arithemtic operators you have learned.</p>
+      <!-- image code snippet of arithmetic in javascript -->
+      <img src="">
+    </div>
+    <button class="collapsible">JavaScript Objects</button>
+    <div class="content">
+      <p>Objects in Javascript are in stored in variables called properties, these properties are in key/values pair.</p>
+      <!-- image code snippet of javascript objects-->
+      <img src="">
+    </div>
+    <button class="collapsible">JavaScript Arrays</button>
+    <div class="content">
+      <p>Javascript array is simply a list of elements, with each element idenfied by its index number which is zero based. Technically, arrays also have key(the index of an array element) and value(the name of the array element).</p>
+      <!-- image code snippet of javascript array.-->
+      <img src="">
+    </div>
+  </div>
+  <script src="../js/main.js"></script>
+  <script src="../js/collapsible.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Responsive Navbar</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/collapsible.css">
+  <link rel="stylesheet" href="../css/faqs.css">
+</head>
+<body>
+  <nav class="navbar">
+    <span class="open-slide">
+      <a href="#" onclick="openSlideMenu()">
+        <svg width="30" height="30">
+          <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+          <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+          <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+        </svg>
+      </a>
+    </span>
+    <h1><span>YOUTH</span><span>MOBILE</span>    <span>PREP</span></h1>
+  </nav>
+  <!-- side-nav -->
+  <div id="side-menu" class="side-nav">
+    <a href="../index.html"><img src="../images/home-menu.png"> <span>Home</span></a>
+    <hr>
+    <a href="about.html"><img src="../images/about-menu.png"> <span>About</span></a>
+    <hr>
+    <a href="html-lesson.html"><img src="../images/html-menu.png"> <span>Learn HTML</span></a>
+    <hr>
+    <a href="css-lesson.html"><img src="../images/css3-menu.png"> <span>Learn CSS</span></a>
+    <hr>
+    <a href="javascript-lesson.html"><img src="../images/javascript-menu.png"> <span>Learn JavaScript</span></a>
+    <hr>
+    <a href="quiz-app.html"><img src="../images/test-menu.png"> <span>Take a Test</span></a>
+    <hr>
+    <a href="faqs.html"><img src="../images/faqs-menu.png"> <span>FAQs</span></a>
+    <hr>
+  </div>
+
+  <div id="main" class="btn-close" onclick="closeSlideMenu()">
+    <h2>FREQUENTLY ASKED QUESTIONS</h2>
+    <button class="collapsible">What is HTML?</button>
+    <div class="content">
+      <p>HTML is an acronym for Hypertext Markup Language. It is used to build the structure of web pages. The content that you read now is a product of HTML. The simple analogy I give about HTML is that it is like the skeleton of web pages made up of only texts, and multi-media files with no design. However, all mobile/web applications have HTML elements.</p>
+    </div>
+    <button class="collapsible">What is CSS?</button>
+    <div class="content">
+      <p>CSS stands for Cascading Style Sheet. While HTML builds the structure of web pages, CSS add styles to the structure/skeleton of the web pages. In other words, CSS is used to adds beauty and design to a web page. Think of the beautiful background color and other lovely designs in this application; that is the effect of CSS.</p>
+    </div>
+    <button class="collapsible">What is JavaScript?</button>
+    <div class="content">
+      <p>JavaScript is a programming language which adds interactivity to web pages. Applications built with only HTML CSS are usually static meaning that a user is unable to interact with such applications. For instance, the menu that opens/closes when you touch the hamburger icons is a function of JavaScript. Also, when you take the test in this application, you will get a result instantly all thanks to JavaScript  or what I love to call <em>The Wizard.</em>. It is important to note that JavaScript is not the same as same Java. They are entirely diffrently programming languages.</p>
+    </div>
+    <button class="collapsible">What Do I start Learning, HTML, CSS or JavaScript?</button>
+    <div class="content">
+      <p>For beginners, it is important to start by learning HTML before getting into CSS and then JavaScript. While learning how to write some code, it is also important to be patient, as impatience is the reason why some learners quit thinking programming is not their calling. It is not secret that even experienced developers sometimes spend days trying to debug their code, but because of patience, they would usually find a solution.</p>
+    </div>
+    <button class="collapsible">What Do I need to know to Start learning?</button>
+    <div class="content">
+      <p>Like I mentioned in the about page, it would be in your best interest to learn computer basics such as powering on/off a computer, working with folders and files, knowing some basic computer keyboard shortcuts. Another important skill that you need is research to be able to find solutions by surfing the internet and reading programming books. As a trainee at the UNESCO-Abuja Youthmobile, I saw how some trainees struggle to learn because of their lack of basic computer skills and inability to research despite the huge amount of time the facilitators invested in guiding them. This does not only apply to those willing to join the Youthmobile training, but also anyone interested in learning computer programming. Again, all of these require some patience, dedication, passion and hardwork to do.</p>
+    </div>
+    <button class="collapsible">How Do I get Started with Writing Some Code?</button>
+    <div class="content">
+      <p>You can visit any of the urls below to get started with learning how to write some code</p>
+      <!-- add youtube urls of some video tutorials -->
+      <ol>
+        <li>https://www.w3schools.com/</li>
+        <li>https://www.tutorialspoint.com/</li>
+        <li>https://www.codecademy.com/learn/learn-html</li>
+      </ol>
+    </div> 
+    <button class="collapsible">What is a Text Editor/IDE?</button>
+    <div class="content">
+      <p>A text editor or IDE(Integrated Development Environment) is a software for writing codes. In no particular order, some of these IDEs include but not limited to;</p>
+      <ol>
+        <li>Atom</li>
+        <li>Visual Studio Code</li>
+        <li>Sublime Text</li>
+        <li>Brackets</li>
+        <li>Notepad</li>
+        <li>Notepad++</li>
+      </ol>
+      <p>These are by far the most widely used text editors by most developers. It is a matter of preference what text editor you used but open the next question to see what IDE I recommed for you.</p>
+    </div>
+    <button class="collapsible">What Text Editor Do I use?</button>
+    <div class="content">
+      <p>As mentioned in the previous question, what text editor you use is a matter of preference. However, as a beginner with zero knowldge in mobile/web applications development, I would recommed you use lightweight IDEs such as Sublime Text and Notepad or Notepad++. Although you may use same text editor as the one used by a tutor you are coding along with. That way, you are sure of working in the same environment as the tutor.</p>
+    </div>
+    <button class="collapsible">Where do I get these IDEs?</button>
+    <div class="content">
+      <p>You can visit any of the links below to download an IDE of your choice.</p>
+      <!-- links to download IDEs -->
+      <ol>
+        <li>https://atom.io/</li>
+        <li>https://notepad-plus-plus.org/</li>
+        <li>https://www.sublimetext.com/</li>
+        <li>http://brackets.io/</li>
+        <li>https://visualstudio.microsoft.com/</li>
+      </ol>
+    </div>
+  </div>
+  <script src="../js/main.js"></script>
+  <script src="../js/collapsible.js"></script>
+</body>
+</html>

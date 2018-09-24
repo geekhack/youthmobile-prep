@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Responsive Navbar</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/collapsible.css">
+  <link rel="stylesheet" href="../css/about.css">
+</head>
+<body>
+  <nav class="navbar">
+    <span class="open-slide">
+      <a href="#" onclick="openSlideMenu()">
+        <svg width="30" height="30">
+          <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+          <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+          <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+        </svg>
+      </a>
+    </span>
+    <h1><span>YOUTH</span><span>MOBILE</span>    <span>PREP</span></h1>
+  </nav>
+  <!-- side-nav -->
+  <div id="side-menu" class="side-nav">
+    <a href="../index.html"><img src="../images/home-menu.png"> <span>Home</span></a>
+    <hr>
+    <a href="about.html"><img src="../images/about-menu.png"> <span>About</span></a>
+    <hr>
+    <a href="html-lesson.html"><img src="../images/html-menu.png"> <span>Learn HTML</span></a>
+    <hr>
+    <a href="css-lesson.html"><img src="../images/css3-menu.png"> <span>Learn CSS</span></a>
+    <hr>
+    <a href="javascript-lesson.html"><img src="../images/javascript-menu.png"> <span>JavaScript Lesson</span></a>
+    <hr>
+    <a href="quiz-app.html"><img src="../images/test-menu.png"> <span>Take Test</span></a>
+    <hr>
+    <a href="faqs.html"><img src="../images/faqs-menu.png"> <span>FAQs</span></a>
+    <hr>
+  </div>
+
+  <div id="main" class="btn-close" onclick="closeSlideMenu()">
+    <h2>About</h2>
+    <button class="collapsible">The Developer</button>
+    <div class="content">
+      <p>I am Ibrahim Hamza Jirah from Abuja, Nigeria; a graduate of Urban and Regional Planning from Ahmadu Bello University, Zaria which is the largest University in Sub-Saharan Africa. I am also an Alumni of the famous Unesco-Abuja Youthmobile training. During the the programme, I trained for two months as a mobile applications developer and my 'development stack' is the PhoneGap framework. I write in HTML, CSS and JavaScript. I also have experience working with Bootstrap and Wordpress. At the moment, I work as a freelancer mobile/web developer and also help introduce other youth to mobile/web development.</p>
+    </div>
+    <button class="collapsible">The Application</button>
+    <div class="content">
+      <p>Having gone through the Unesco Youthmobile training, it is safe to say that the experience was a roller coaster one. Before I enrolled for the training I had no experience of HTML, CSS and JavaScript; the languages taught at the Unesco-Abuja Youthmobile. Hence, the first few weeks were quite challenging learning these languages despite my basic knowledge in computer appreciation which infact does not equate to doing well in the training but it is a pre-requisite to get started.</p>
+      <p>Therefore, this application provides aspiring youthmobile trainess with theoretical prep lessons as well as test questions and answers to get started before enrolling for the programme. Prospective <strong><em>'youthmobilites'</em></strong> will have the opportunity to take lessons and also lessons quiz to be able to measure their knowledge level at the end of the lesson.</p>
+    </div>
+    <button class="collapsible">The Scope</button>
+    <div class="content">
+      <p>This mobile application solely aims to introduce propesctive <strong><em>'youthmobilites'</em></strong> to the basics of the building blocks (HTML, CSS and JavaScript) of the Unesco-Abuja Youthmobile programme. It is primarily theory based, however, users are free to taste in their text-editors/IDE the code snippets that appear in this application; such as the one below if they ever want to get practical with the lessons.</p>
+      <img src="../images/code-snippet-about.png" width="100%">
+    </div>
+    <button class="collapsible">The Limitation</button>
+    <div class="content">
+      <p>This mobile application is not limited to proprespetive <strong><em>'youthmobilites'</em></strong>. This means that anyone interesting in mobile/web development could use the app; as its content is pretty much basic and provides a no-nonsense guide to the building blocks (HTML, CSS and JavaScript) of mobile/web development. </p>
+    </div>
+    <button class="collapsible">Developer's Message</button>
+    <div class="content">
+      <p>No doubt, it is a general consensus that the ICT holds the key to pretty much everything that we do. Also, most of the Global big brands are owned by techies. In Africa, we seem to lay more emphasis on paper qualification than practical skills, hence, the reason for our backwardness in many disciplines including the ICT. Although we have some brilliant minds from this continent who have made giant strides in ICT, but compare that to other regions and you will agree with me that we are indeed lagging behind; so, it is only logical that Africa deliberately commits resources into training ICT manpower so that we become the makers rather than users of technology. Unarguably, in some parts of the Global North Region, the lesson content of this mobile application may seem irrelevant, as their focus now is on AI (Artificial Intelligence) rather than the traditional mobile/web development that we mostly seem to be involved in, in the Global South Region</p>
+    </div>
+    <button class="collapsible">Contact Developer</button>
+    <div class="content">
+      <p>Mobile: <strong>+234 8038494120</strong></p>
+      <p>Email: <strong>hamzajirah@gmail.com</strong></p>
+      <p>Twitter: <strong>@HamzaJirah1</strong></p>
+      <p>Github: <strong>https://www.github.com/HamzaJirah</strong></p>
+    </div>
+    <!-- <button class="collapsible">Developer's CV</button>
+    <div class="content">
+      <a style="background: rgb(17, 91, 120); width: 40%;" href="../images/Jirah-Hamza-Ibrahim.pdf" download>Download CV</a>
+    </div> -->
+  </div>
+  <script src="../js/main.js"></script>
+  <script src="../js/collapsible.js"></script>
+</body>
+</html>

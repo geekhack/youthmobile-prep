@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Responsive Navbar</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/collapsible.css">
+  <link rel="stylesheet" href="../css/html-lesson.css">
+</head>
+<body>
+  <nav class="navbar">
+    <span class="open-slide">
+      <a href="#" onclick="openSlideMenu()">
+        <svg width="30" height="30">
+          <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+          <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+          <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+        </svg>
+      </a>
+    </span>
+    <h1><span>YOUTH</span><span>MOBILE</span>    <span>PREP</span></h1>
+  </nav>
+  <!-- side-nav -->
+  <div id="side-menu" class="side-nav">
+    <a href="../index.html"><img src="../images/home-menu.png"> <span>Home</span></a>
+    <hr>
+    <a href="about.html"><img src="../images/about-menu.png"> <span>About</span></a>
+    <hr>
+    <a href="html-lesson.html"><img src="../images/html-menu.png"> <span>Learn HTML</span></a>
+    <hr>
+    <a href="css-lesson.html"><img src="../images/css3-menu.png"> <span>Learn CSS</span></a>
+    <hr>
+    <a href="javascript-lesson.html"><img src="../images/javascript-menu.png"> <span>JavaScript Lesson</span></a>
+    <hr>
+    <a href="quiz-app.html"><img src="../images/test-menu.png"> <span>Take Test</span></a>
+    <hr>
+    <a href="faqs.html"><img src="../images/faqs-menu.png"> <span>FAQs</span></a>
+    <hr>
+  </div>
+
+  <div id="main" class="btn-close" onclick="closeSlideMenu()">
+    <h2>HTML Lesson</h2>
+    <button class="collapsible">The meaning of HTML</button>
+    <div class="content">
+      <p>HTML is an acronym for Hypertext Markup Language. It is used to build the structure of web pages. The content that you read now is a product of HTML. The simple analogy I give about HTML is that it is like the skeleton of web pages made up of only texts, and multi-media files with no design. However, all mobile/web applications have HTML elements(which you will learn in subsequent lesson).</p>
+    </div>
+    <button class="collapsible">HTML Document Structure</button>
+    <div class="content">
+      <p>This lesson focuses on HTML5 which is an upgrade on HTML4. The HTML Document Structure can be seen in the image below.</p>
+      <!-- image of HTML document structure -->
+      <img src="../images/html-doc-struc.png" >
+      <ol>
+        <li> !DOCTYPE:  a HTML5 declaration which means that the document type is HTML5 and not just HTML</li>
+        <li> html:  a general declaration of html </li>
+        <li> head:  links to CSS files, meta data and sometimes javascript files are put there</li>
+        <li> title:  the title of a HTML document is written here which appears on a browser's tab</li>
+        <li> body:  content of a web page is written here</li>
+      </ol>
+    </div>
+    <button class="collapsible">HTML Tags</button>
+    <div class="content">
+      <p>All of the subjects in the list of the previous  lesson are called HTML tags. These tags consist of an opening tag/start tag and closing tag/end tag. </p>
+      <!-- opening/closing tag image -->
+      <img src="../images/open-close-tags.png">
+    </div>
+    <button class="collapsible">HTML Element</button>
+    <div class="content">
+      <p>An HTML element consist of the following:</p>
+      <ul>
+        <li>Opening Tag/Start Tag</li>
+        <li>Closing Tag/End Tag</li>
+        <li>Content. It is only the content of an HTML element that is displayed in the browser.</li>
+      </ul>
+       <!-- image of html element -->
+       <img src="../images/html-element.png">
+    </div>
+    <button class="collapsible">HTML Comment</button>
+    <div class="content">
+      <p>It is a general practice for developers to write comments when building applications as individuals or group. The essence of the comment is to enable developers or their colleagues to be able to read their codes easily without having to waste time trying to figure out what is where. Also, comments are not displayed in the browser and only the developer sees them. See example in the figure below.</p>
+      <!-- image of HTML Comment -->
+      <img src="">
+    </div>
+    <button class="collapsible">Self Closing/Void Tags</button>
+    <div class="content">
+     <p>Some HTML tags have only an opening tag and no closing tag; and they called the self closing/void tags.</p>
+     <!-- image code snippet of self closing tags -->
+     <img src="../images/self-closing-tags.png">
+    </div>
+    <button class="collapsible">The Heading Tags</button>
+    <div class="content">
+     <p>When developing applications, sometimes a developer is required to write a heading in a section of a web page. So, the heading tags come handy. These heading tags include h1, h2, h3, h4, h5 and h6. The h1 is the biggest heading while h6 is the smallest heading.</p>
+     <!-- image code snippet of heading tags -->
+     <img src="">
+    </div>
+    <button class="collapsible">The Paragraph Tag</button>
+    <div class="content">
+     <p>The paragrpah tag usually houses lengthy text content in a web page. So, when you have an article or any other lengthy content to add to your web page, use the paragraph tag.</p>
+     <!-- image code snippet a paragraph tag and text content -->
+     <img src="../images/paragraph-tag.png">
+    </div>
+    <button class="collapsible">HTML Text Formating</button>
+    <div class="content">
+     <p>Although it is a general practice to format text using CSS (Cascading Style Sheet), sometimes developers may want a quick solution, hence they use some HTML tags to qiuckly format text. See the figure below for some text formating tags</p>
+     <!-- image code snippet of text formating tags -->
+     <img src="../images/text-formating.png">
+    </div>
+    <button class="collapsible">The Image Tag</button>
+    <div class="content">
+     <p>The image tag is used to add image to a web page. It is self closing tag. To add an image, we add the src (source) attribute to the image. The src attribute defines the path to our image.</p>
+     <!-- image code snippet of img tag -->
+     <img src="../images/image-tag.png">
+    </div>
+    <button class="collapsible">HTML Attributes</button>
+    <div class="content">
+     <p>HTML attribute provides additional information about an HTML element which is in key/value pair. For example, the src="path-to-iamge-file" is an example of an attribute in the image tag. In this case, the src is the <em>key</em> while <em>"path-to-iamge-file"</em> is the value. In some cases, an html tag could have multiple attributes which are written in the opening tag of an HTML element.</p>
+     <!-- image code snippet of img tag with src attribute -->
+     <img src="../images/image-tag-single-atribute.png">
+     <!-- image code snippet of img tag with src and width attributes -->
+     <img src="../images/image-tag-multiple-attribute.png">
+    </div>
+    <button class="collapsible">HTML List</button>
+    <div class="content">
+     <p>To make a list of items, we use the list tags which could be ordered (ol tag) or unordered (ul tag)list. The ordered list is usually serialized in numbers of letters while the unordered list is not.</p>
+     <!-- image code snippet of ordered list -->
+     <img src="../images/ordered-list.png">
+     <!-- image code snippet of unordered list -->
+     <img src="../images/unordered-list.png">
+    </div>
+    <button class="collapsible">HTML Table</button>
+    <div class="content">
+     <p>The HTML table is used to present tabular data. Although in the past, it was also used for creating navigation menu for applications; it is now considered an archaic thing to do. The Table is wrapped within table tag.</p>
+     <!-- image code snippet of a table -->
+     <img src="../images/table.png">
+    </div>
+    <button class="collapsible">HTML Form</button>
+    <div class="content">
+     <p>In mobile/web development, the html form is used to collect users information. When you create a facebook account, apply for admission/job register online for an examination, you have simply filled in an HTML form. Within the form, we have input tags with type attribute and values of text, email, password, number, radio, checkbox etc. The form could also have label tags to label the input types. The last tag is always the button/submit which users click to GET/POST the informations entered in the form.</p>
+     <!-- image code snippet of a form -->
+     <img src="../images/form.png">
+    </div>
+    <button class="collapsible">HTML Anchor/a Tag</button>
+    <div class="content">
+     <p>The anchor/a tag is used to link to one page to another either within the same (internal link) application or to another (external link). The link is defined in the href attribute. See figure below.</p>
+     <!-- image code snippet of internal link -->
+     <img src="../images/internal-link.png">
+     <!-- image code snippet of exteranl link -->
+     <img src="../images/external-link.png">
+    </div>
+    <button class="collapsible">Grouping HTML Elements</button>
+    <div class="content">
+     <p>To group similar HTML elements, the div or span tags are mostly used. The div and span are like contaiers for holding similar group of elements</p>
+     <!-- image code snippet of div holding brand name and menu -->
+     <img src="../images/div-.png">
+     <!-- image code snippet of span holding links to social media handles. -->
+     <img src="../images/span-tag.png">
+    </div>
+    <button class="collapsible">Nesting HTML Elements</button>
+    <div class="content">
+     <p>In the previous lesson, we saw that the within the form tag, other tags (input, label, select) exist. So, those tags are the direct children of the form tag; in other words, they are nested elements of the form. The li as seen in the lesson on <em>HTML List,</em> are also nested elements of the <em>ol</em> and <em>ul</em> tags respectively.</p>
+     <!-- image code snippet of Nested elemets. -->
+     <img src="../images/nested-elements.png">
+    </div>
+    <button class="collapsible">Important Note</button>
+    <div class="content">
+     <p>It is important to remember that it is the content of the HTML elements that is output in the browser and not the tags themselves (which are the codes responsible for the content displayed in the browser).</p>
+    </div>
+  </div>
+  <script src="../js/main.js"></script>
+  <script src="../js/collapsible.js"></script>
+</body>
+</html>

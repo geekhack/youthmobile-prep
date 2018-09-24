@@ -1,0 +1,13 @@
+.btn-close h2 {
+  padding-top: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.content img {
+  width: 100%;
+}
+
+.content ol li, ul li {
+  color: #fff;
+}
